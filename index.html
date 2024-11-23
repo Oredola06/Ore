@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon site</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #ffe3e3, #ffb6b6); /* Dégradé de rose pâle à rose plus foncé */
+        }
+
+        .header-frame, .menu-frame, .content-frame {
+            border: 5px solid #ffe3e3;
+            background: linear-gradient(to right, #ffe3e3, #ffb6b6); /* Dégradé de rose pâle à rose plus foncé */
+        }
+
+        .menu-frame {
+            padding-right: 10px; /* Ajout d'un espace à droite du menu */
+        }
+
+        .content-frame {
+            padding-left: 10px; /* Ajout d'un espace à gauche du contenu */
+        }
+    </style>
+</head>
+
+<frameset rows="20%,80%" frameborder="5" border="3" framespacing="0">
+    <frame src="header.html" class="header-frame" noresize>
+    <frameset cols="20%,80%" frameborder="3" border="3" framespacing="0">
+        <frame src="menu.html" class="menu-frame" noresize>
+        <frame src="Page2.html" class="content-frame" name="x" noresize>
+    </frameset>
+</frameset>
+
+</html>
